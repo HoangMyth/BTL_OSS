@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1154</width>
-    <height>649</height>
+    <height>660</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -362,14 +362,14 @@ QPushButton {
 background-color: rgb(154, 153, 150);</string>
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout_5">
-          <item alignment="Qt::AlignTop">
+          <item>
            <widget class="QStackedWidget" name="stackedWidget">
             <property name="currentIndex">
              <number>0</number>
             </property>
             <widget class="QWidget" name="processesWidget">
              <layout class="QVBoxLayout" name="verticalLayout_2">
-              <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+              <item>
                <widget class="QLabel" name="label">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -418,12 +418,15 @@ background-color: rgb(154, 153, 150);</string>
                </widget>
               </item>
               <item>
-               <widget class="QWidget" name="widget" native="true">
-                <property name="minimumSize">
-                 <size>
-                  <width>500</width>
-                  <height>500</height>
-                 </size>
+               <widget class="QTableWidget" name="tableWidget"/>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit"/>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton">
+                <property name="text">
+                 <string>Kill PID</string>
                 </property>
                </widget>
               </item>
